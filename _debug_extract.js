@@ -1,0 +1,11 @@
+const fs = require('fs');
+const vm = require('vm');
+const text = fs.readFileSync('C:/Users/rafael.weber/Documents/Codex/2026-04-24/estoy-trabajando-en-un-juego-web/index.html','utf8');
+const start = text.indexOf('const DB = {');
+const end = text.indexOf('const TRIVIA=[');
+const snippet = text.slice(start, end);
+const script = snippet + '\n;globalThis.__DB__ = DB;';
+const context = { console, globalThis: {} };
+vm.createContext(context);
+vm.runInContext(script, context);
+process.stdout.write(JSON.stringify(context.globalThis.__DB__));
