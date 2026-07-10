@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">FutNexo</title>
+  <desc id="desc">Logo de FutNexo, el juego de conexiones futboleras</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1830"/>
+      <stop offset="1" stop-color="#160b2d"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5d4ff"/>
+      <stop offset=".45" stop-color="#d13eff"/>
+      <stop offset="1" stop-color="#6f00ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="880" height="360" rx="54" fill="url(#bg)"/>
+  <circle cx="440" cy="174" r="126" fill="none" stroke="#a100ff" stroke-opacity=".16" stroke-width="22"/>
+  <g filter="url(#glow)" stroke="url(#brand)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M367 112 440 70l73 42v84l-73 42-73-42z"/>
+    <path d="m440 70 1 168m-74-126 146 84m0-84-146 84" opacity=".82"/>
+  </g>
+  <g fill="#fff">
+    <text x="440" y="293" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="72" font-weight="900" letter-spacing="-3">FUT<tspan fill="url(#brand)">NEXO</tspan></text>
+  </g>
+  <text x="440" y="329" text-anchor="middle" fill="#cbbdde" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="6">CONECTA EL FÚTBOL</text>
+</svg>
